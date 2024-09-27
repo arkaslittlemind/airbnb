@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
+import Modal from "./components/Modals/Modal";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={font.className}
       >
         <Navbar />
+        <Modal title="Hello Arka" isOpen/>
         {children}
       </body>
     </html>
