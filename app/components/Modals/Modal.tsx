@@ -137,7 +137,19 @@ const Modal: React.FC<ModalProps> = ( {
                                    w-full 
                                 "
                             >
-                                <Button label='My Button'/>
+                                {secondaryAction && secondaryActionLabel && (
+                                    <Button
+                                        outline
+                                        disabled={disabled}
+                                        label={secondaryActionLabel}
+                                        onClick={handleSecondaryAction}
+                                    />
+                                )}
+                                <Button 
+                                    disabled={disabled}
+                                    label={actionLabel}
+                                    onClick={handleSubmit}
+                                />
                             </div>
                         </div>
                     </div>
