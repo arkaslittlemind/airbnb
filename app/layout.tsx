@@ -8,7 +8,7 @@ const font = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Arksbnb Clone",
+  title: "Arksbnb | Holiday rentals, cabins , beach houses and more",
   description: "Airbnb Clone",
 };
 

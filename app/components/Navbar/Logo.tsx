@@ -7,11 +7,12 @@ import Image from 'next/image';
 const Logo = () => {
     const router = useRouter();
     return (
-        <Image 
+        <image 
             alt="Logo" 
             className='hidden md:block cursor-pointer' 
-            height="100" width="100" 
-            src="https://www.logo.wine/a/logo/Airbnb/Airbnb-Logo.wine.svg" 
+            height={100}
+            width={100} 
+            src="https://utfs.io/f/oKBxKAtP36VOtq5phtG1FHCgJGTwD3NRdsmiYu6Skh5lqQUE" 
         />
     )
 }
